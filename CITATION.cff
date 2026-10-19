@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: >-
+  If you use TaiwanBioTopoMaps in research, please cite the version used and
+  separately acknowledge the boundary and elevation data sources.
+type: software
+title: "TaiwanBioTopoMaps: Browser-based Mapping of Biological Occurrence Records across Taiwan and Its Offshore Islands"
+version: 3.0.0
+authors:
+  - family-names: Hsiao
+    given-names: Yu-Chun
+    orcid: https://orcid.org/0009-0006-1635-119X
+license: MIT
+repository-code: https://github.com/YCHsiao-TW/TaiwanBioTopoMaps
+url: https://taiwan-biotopo-yc-1019.yuchunhsiao1001.chatgpt.site
+abstract: >-
+  A browser application for terrain-based mapping of biological occurrence
+  records across Taiwan and its offshore islands, with local CSV processing,
+  taxon filtering, co-occurrence pies, stable site identifiers, configurable
+  map and legend layouts, complete project files, and batch map export.
+keywords:
+  - Taiwan
+  - biodiversity
+  - occurrence records
+  - topographic mapping
+  - JavaScript
+  - web application

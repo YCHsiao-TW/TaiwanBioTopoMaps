@@ -1,0 +1,316 @@
+{
+  "application": "TaiwanBioTopoMapsProject",
+  "version": 1,
+  "filename": "example_5species_all_regions.csv",
+  "demo": true,
+  "data": {
+    "headers": [
+      "species",
+      "longitude",
+      "latitude",
+      "locality",
+      "region_hint",
+      "notes"
+    ],
+    "rows": [
+      [
+        "Example species A",
+        "121.0000",
+        "23.5000",
+        "Central Taiwan",
+        "Taiwan",
+        "shared coordinate test"
+      ],
+      [
+        "Example species B",
+        "121.0000",
+        "23.5000",
+        "Central Taiwan",
+        "Taiwan",
+        "shared coordinate test"
+      ],
+      [
+        "Example species C",
+        "121.0000",
+        "23.5000",
+        "Central Taiwan",
+        "Taiwan",
+        "shared coordinate test"
+      ],
+      [
+        "Example species D",
+        "120.6800",
+        "23.9000",
+        "Western Taiwan",
+        "Taiwan",
+        ""
+      ],
+      [
+        "Example species E",
+        "121.4500",
+        "24.1000",
+        "Eastern Taiwan",
+        "Taiwan",
+        ""
+      ],
+      [
+        "Example species A",
+        "118.3200",
+        "24.4400",
+        "Kinmen main island",
+        "Kinmen",
+        "shared coordinate test"
+      ],
+      [
+        "Example species B",
+        "118.3200",
+        "24.4400",
+        "Kinmen main island",
+        "Kinmen",
+        "shared coordinate test"
+      ],
+      [
+        "Example species C",
+        "118.4100",
+        "24.4500",
+        "Kinmen main island",
+        "Kinmen",
+        ""
+      ],
+      [
+        "Example species A",
+        "119.9600",
+        "25.9700",
+        "Juguang",
+        "Matsu",
+        "shared coordinate test"
+      ],
+      [
+        "Example species B",
+        "119.9600",
+        "25.9700",
+        "Juguang",
+        "Matsu",
+        "shared coordinate test"
+      ],
+      [
+        "Example species C",
+        "119.9500",
+        "26.1600",
+        "Nangan",
+        "Matsu",
+        ""
+      ],
+      [
+        "Example species D",
+        "119.9800",
+        "26.2200",
+        "Beigan",
+        "Matsu",
+        ""
+      ],
+      [
+        "Example species E",
+        "120.4900",
+        "26.3700",
+        "Dongyin",
+        "Matsu",
+        ""
+      ],
+      [
+        "Example species A",
+        "119.5600",
+        "23.5700",
+        "Magong",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species B",
+        "119.6100",
+        "23.7500",
+        "Jibei",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species C",
+        "119.5200",
+        "23.4900",
+        "Hujing",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species D",
+        "119.5000",
+        "23.3700",
+        "Wangan",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species E",
+        "119.4300",
+        "23.2000",
+        "Qimei",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species A",
+        "119.6700",
+        "23.2500",
+        "Dongji",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species B",
+        "119.5165",
+        "23.2602",
+        "Dongyuping",
+        "Penghu",
+        ""
+      ],
+      [
+        "Example species C",
+        "121.4900",
+        "22.6600",
+        "Green Island",
+        "Green Island",
+        "shared coordinate test"
+      ],
+      [
+        "Example species D",
+        "121.4900",
+        "22.6600",
+        "Green Island",
+        "Green Island",
+        "shared coordinate test"
+      ],
+      [
+        "Example species E",
+        "121.5500",
+        "22.0400",
+        "Lanyu",
+        "Lanyu",
+        "shared coordinate test"
+      ],
+      [
+        "Example species A",
+        "121.5500",
+        "22.0400",
+        "Lanyu",
+        "Lanyu",
+        "shared coordinate test"
+      ],
+      [
+        "Example species B",
+        "121.9500",
+        "24.8400",
+        "Guishan Island",
+        "Guishan Island",
+        "shared coordinate test"
+      ],
+      [
+        "Example species C",
+        "121.9500",
+        "24.8400",
+        "Guishan Island",
+        "Guishan Island",
+        "shared coordinate test"
+      ],
+      [
+        "Example species D",
+        "120.3700",
+        "22.3400",
+        "Xiaoliuqiu",
+        "Xiaoliuqiu",
+        "shared coordinate test"
+      ],
+      [
+        "Example species E",
+        "120.3700",
+        "22.3400",
+        "Xiaoliuqiu",
+        "Xiaoliuqiu",
+        "shared coordinate test"
+      ]
+    ]
+  },
+  "config": {
+    "application": "TaiwanBioTopoMaps",
+    "version": 1,
+    "language": "en",
+    "settings": {
+      "legendPosition": "right",
+      "legendColumns": 1,
+      "legendFont": 13,
+      "legendSymbol": 4.4,
+      "legendX": 75,
+      "legendY": 10,
+      "siteNumbers": false,
+      "siteLabelSize": 11,
+      "pageWidth": 25,
+      "pageHeight": 20,
+      "terrain": true,
+      "hillshade": true,
+      "shadow": 0.28,
+      "direction": 315,
+      "angle": 45,
+      "terrainQuality": "auto",
+      "terrainZoom": 8,
+      "pies": true,
+      "pieMode": "presence",
+      "digits": 5,
+      "radius": 9,
+      "autoSize": true,
+      "counties": true,
+      "towns": true,
+      "countyLabels": false,
+      "townLabels": false,
+      "frame": true,
+      "grid": false,
+      "northArrow": true,
+      "scaleBar": true,
+      "legend": true,
+      "italic": true
+    },
+    "camera": {
+      "x": 0.8345833333333332,
+      "y": 0.43106447795973646,
+      "zoom": 7.573444977667116
+    },
+    "referenceBounds": [
+      117.9,
+      21.5,
+      123,
+      26.6
+    ],
+    "columns": {
+      "lon": "longitude",
+      "lat": "latitude",
+      "group": "species"
+    },
+    "colors": {
+      "Example species A": "#0072B2",
+      "Example species B": "#CC79A7",
+      "Example species C": "#D55E00",
+      "Example species D": "#56B4E9",
+      "Example species E": "#222222"
+    },
+    "selected": [
+      "Example species A",
+      "Example species B",
+      "Example species C",
+      "Example species D",
+      "Example species E"
+    ]
+  },
+  "exportOptions": {
+    "prefix": "DEMO_TaiwanBioTopoMaps",
+    "format": "png",
+    "width": 3000
+  }
+}

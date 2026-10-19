@@ -1,0 +1,357 @@
+{
+  "project": "TaiwanBioTopoMaps",
+  "version": "3.0.0",
+  "prepared_date": "2026-10-20",
+  "distribution": "web-only",
+  "repository": "https://github.com/YCHsiao-TW/TaiwanBioTopoMaps",
+  "upstream_web_commit": "161c22d2b4815436022eee557858751d241f3325",
+  "github_upload_performed": false,
+  "verification": [
+    "portable application checks passed",
+    "native Canvas terrain and export checks passed",
+    "synthetic example project restored through actual app events",
+    "workflow YAML and local documentation links checked"
+  ],
+  "limitations": [
+    "No browser/device QA",
+    "No independent R/Web equivalence validation",
+    "No GitHub Actions execution in target repository yet"
+  ],
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "size": 546,
+      "sha256": "aaf57485441b0ad4f647d74633005e78871f8622c612f40c5d153e7816f0b83d"
+    },
+    {
+      "path": ".github/workflows/pages.yml",
+      "size": 1207,
+      "sha256": "cdf20485d7f1f486ee0d31f96dc566e4c1fabd6e1785a69d1472f279b1e536b1"
+    },
+    {
+      "path": ".gitignore",
+      "size": 74,
+      "sha256": "02a9f7b03c52ac0eca87eddbc5709a3c84663c00ad3c0e8b9bde3c108ab5d062"
+    },
+    {
+      "path": "AI_USAGE.md",
+      "size": 1546,
+      "sha256": "0f855afed9a1df59151b83c47133c7bcc1235eed813fd4e04e5f4a80a60374f1"
+    },
+    {
+      "path": "CITATION.cff",
+      "size": 1010,
+      "sha256": "be60a9f78c0cdf14c8ec7a61f690053dbf626d98643e5eaf164fad8e2153c9a0"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "size": 1778,
+      "sha256": "0a4f8ba36aaeca62ae7fbc3c7210694653be0f330fef3c00c601818272a97cbb"
+    },
+    {
+      "path": "dist/.nojekyll",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "dist/app.mjs",
+      "size": 28131,
+      "sha256": "b26f56d69092827a361b37329e6d147c8b3b2011f7bad7bd3b11094d1f620a5c"
+    },
+    {
+      "path": "dist/assets/boundaries.json",
+      "size": 2758323,
+      "sha256": "9340654b4df41b74d87446d6605e610c987df1d9eea790ec367d5ae019987d3b"
+    },
+    {
+      "path": "dist/assets/favicon.svg",
+      "size": 204,
+      "sha256": "30e0f59df2a0188f30cba2011a2713a6b2825b1e8cb0141e65fb5b1970a60c04"
+    },
+    {
+      "path": "dist/assets/taiwan-atlas-LICENSE.txt",
+      "size": 1067,
+      "sha256": "9ad88ef4eb520e69c47b49f6cccb00da33a1f04d9b13424c4242761c47049a98"
+    },
+    {
+      "path": "dist/assets/taiwan-topology.json",
+      "size": 512094,
+      "sha256": "250f63cdef76679b67d2a34633a69355c8f1180ae6b55407e6c87789940feab0"
+    },
+    {
+      "path": "dist/assets/terrain-index.json",
+      "size": 325,
+      "sha256": "bbb885518981affa1930b230a64d7bbb7af06d182ab47c694fff86712df23e63"
+    },
+    {
+      "path": "dist/assets/terrain/8/211/108.png",
+      "size": 97686,
+      "sha256": "c7a790a6c24c828d3a1003b439ab7c34835d049339f8424c1b45d88c066808b3"
+    },
+    {
+      "path": "dist/assets/terrain/8/211/109.png",
+      "size": 98656,
+      "sha256": "e252627917ac0ebe53b9c2b610220cf559850b67a0b64bf07ab98988b179a768"
+    },
+    {
+      "path": "dist/assets/terrain/8/211/110.png",
+      "size": 94407,
+      "sha256": "2fe544bcce50dd87ff4dc3f2e37df8e6461458e6a26f83f02560d2ffbaf156ac"
+    },
+    {
+      "path": "dist/assets/terrain/8/211/111.png",
+      "size": 95718,
+      "sha256": "d350f90e6e7623f6384f191f06d8939c4c4abcea267923c3169683f6e05a7672"
+    },
+    {
+      "path": "dist/assets/terrain/8/211/112.png",
+      "size": 132862,
+      "sha256": "06fda2c5590604b52bc941455eae907e99ccf67619d8e4324ccd258b69072f85"
+    },
+    {
+      "path": "dist/assets/terrain/8/212/108.png",
+      "size": 98767,
+      "sha256": "74bc02d154eb8fde05e17865bc3cc058f6faba04b6bc502eb2b832672da33e15"
+    },
+    {
+      "path": "dist/assets/terrain/8/212/109.png",
+      "size": 97531,
+      "sha256": "01343daf745b0980585d6d819113dcf1df80ea3bcf7455112071f5205bb1e5f9"
+    },
+    {
+      "path": "dist/assets/terrain/8/212/110.png",
+      "size": 100570,
+      "sha256": "123aa2e90888ecd7fc440963ce70a3042286193d780e4589d9783240b1f35093"
+    },
+    {
+      "path": "dist/assets/terrain/8/212/111.png",
+      "size": 122311,
+      "sha256": "62cecf03b0ba9b50529b2ba157ab86c72569ad1c665c88218e5d57d4ab15dcba"
+    },
+    {
+      "path": "dist/assets/terrain/8/212/112.png",
+      "size": 134841,
+      "sha256": "029c7cdac75f835b0034162b12a6ca443cba73bcc71e07ac11002ed7df3f2c04"
+    },
+    {
+      "path": "dist/assets/terrain/8/213/108.png",
+      "size": 102799,
+      "sha256": "7f1ac4834190f9bd2c6e2a9cef7a35a8da062ef3a75819dc64f4610da3d696e4"
+    },
+    {
+      "path": "dist/assets/terrain/8/213/109.png",
+      "size": 102356,
+      "sha256": "fc38b926e01edbe26e0e38d05ccf3cbc3bef02f8d9fa6f8f4659a4d2058def76"
+    },
+    {
+      "path": "dist/assets/terrain/8/213/110.png",
+      "size": 97370,
+      "sha256": "1e9a8dc2c301685fcbd31857c0ac2930c62f32beaf6c94de8e6f2f24eafbeda0"
+    },
+    {
+      "path": "dist/assets/terrain/8/213/111.png",
+      "size": 119768,
+      "sha256": "e02d0484f8cc05c9fe24b6fdd75afba0314fc8d30d604b17df0ddf434b2aa55d"
+    },
+    {
+      "path": "dist/assets/terrain/8/213/112.png",
+      "size": 142544,
+      "sha256": "322830c1c578897783f5b4947fae8c8a579ec3db2e46060b384bfea092a54e76"
+    },
+    {
+      "path": "dist/assets/terrain/8/214/108.png",
+      "size": 95386,
+      "sha256": "6234d3f736a3f49dcab3c44feb4536e6bfd00eacba67df47fb06723d0c6e9ed8"
+    },
+    {
+      "path": "dist/assets/terrain/8/214/109.png",
+      "size": 114840,
+      "sha256": "fb42b929dd4fe12fb09acf94d52a27d1e3a76ae3f99c77feadbb2d99963cf90f"
+    },
+    {
+      "path": "dist/assets/terrain/8/214/110.png",
+      "size": 131998,
+      "sha256": "37e7156fadb60dcc3c1a3ca0c3f82c0facbb6750a779bbb47b702e6f2b28de56"
+    },
+    {
+      "path": "dist/assets/terrain/8/214/111.png",
+      "size": 141764,
+      "sha256": "d84085cd519706abbb6c87fc0a9048acbb4dc37fd21414f5232016749cb2488d"
+    },
+    {
+      "path": "dist/assets/terrain/8/214/112.png",
+      "size": 148776,
+      "sha256": "807767d4c680af9bc7b6956c263d6d56c56009a19aa792a804edf9392770e5f5"
+    },
+    {
+      "path": "dist/assets/terrain/8/215/108.png",
+      "size": 91725,
+      "sha256": "2ebd8708fac0db5c836e4cbd4e85aaba481d656db578b6ccbb90cc42e811cf75"
+    },
+    {
+      "path": "dist/assets/terrain/8/215/109.png",
+      "size": 138718,
+      "sha256": "3d19c19bb006333229514c6c9d4094c94a1b4d8c63670d9b23a8135920564844"
+    },
+    {
+      "path": "dist/assets/terrain/8/215/110.png",
+      "size": 147645,
+      "sha256": "9d9cc766a837d32913a80d3b180df196e53e6747b39604cf679bebd481c176be"
+    },
+    {
+      "path": "dist/assets/terrain/8/215/111.png",
+      "size": 142770,
+      "sha256": "deb08ea4dbdaaf4e5740d5352e659f6e4e70917690fdca337c84d332d18b95ee"
+    },
+    {
+      "path": "dist/assets/terrain/8/215/112.png",
+      "size": 141641,
+      "sha256": "2b0b4cfb5d84a93c5072b513a13bbaad79f5ae6790b75f2fc4f892ec295d43a5"
+    },
+    {
+      "path": "dist/core.mjs",
+      "size": 6615,
+      "sha256": "f93dfbd717c304a00bfe826cf6e434ee29422b131ebc7cd51f719f34c833af2a"
+    },
+    {
+      "path": "dist/export.mjs",
+      "size": 5078,
+      "sha256": "8f8a75a73094e6a6876fb4bbb4d0833509147bbd4e0d017e2c45b8377bcbef4a"
+    },
+    {
+      "path": "dist/i18n.mjs",
+      "size": 21511,
+      "sha256": "f1a56c9ff8e62cfaa951f068ca8ce2db95e03305473c433dd84b56f2ef0b20f3"
+    },
+    {
+      "path": "dist/index.html",
+      "size": 18034,
+      "sha256": "4037ecdb921c351a388e7c90d260f909421a04f6ed8b756f0c965bd40e31fa55"
+    },
+    {
+      "path": "dist/legend.mjs",
+      "size": 1509,
+      "sha256": "a7172b8e491a6f05801dfe3e4c36f3848e1efef7789645a072374c8f8168ada9"
+    },
+    {
+      "path": "dist/map.mjs",
+      "size": 17782,
+      "sha256": "a272b55b5b18841743643e89f03ad1472e1734bc5a4af96cf7a77d5cbb3f16bb"
+    },
+    {
+      "path": "dist/page.mjs",
+      "size": 1459,
+      "sha256": "62a70a722ad8843a82c8548f7d8d098be4b0b63ded3c871566f27539bfb5dc3c"
+    },
+    {
+      "path": "dist/project.mjs",
+      "size": 1058,
+      "sha256": "a83e3c9db07809e4d1348281eea4f0f117cb0c05e62c67f33eafc93e5a03f79d"
+    },
+    {
+      "path": "dist/style.css",
+      "size": 14055,
+      "sha256": "ef56acd383619927721420cdde2d593ae66c3c439a912a2635bf49c368faa7df"
+    },
+    {
+      "path": "docs/GITHUB_UPLOAD.md",
+      "size": 3417,
+      "sha256": "5410ca8254608255b80d6a2307620b2a99b6f2376d6f52a075ff538033ba4722"
+    },
+    {
+      "path": "docs/images/example-map.png",
+      "size": 333085,
+      "sha256": "e3c4d98a4182748dc80dfcc085bbefff1b7cf8fae9b60e87eb12a06ce3c8639f"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "size": 2273,
+      "sha256": "074531a4b0973e65ab3893a8c5c874d09db834ba34fdd39eb0ee7bfe503d812f"
+    },
+    {
+      "path": "examples/example_5species_all_regions.csv",
+      "size": 1928,
+      "sha256": "8822d4626b335cbdfc1d14488299774dfabe14dc285d448bff98347a552c956c"
+    },
+    {
+      "path": "examples/example_project.tbm.json",
+      "size": 6133,
+      "sha256": "0d536ba504d06494b130f566ae847613ec673ed32d07b06547ecdf499b991b61"
+    },
+    {
+      "path": "examples/README.md",
+      "size": 1063,
+      "sha256": "1f14e201a5a948eb4cb3c1a9d18ecef9ff17264f4fcef7d08db80989b5afd236"
+    },
+    {
+      "path": "LICENSE",
+      "size": 1070,
+      "sha256": "0e84a37300263a7609ae05854f1f90c0e2e20f5952003050926ba8e625897781"
+    },
+    {
+      "path": "package.json",
+      "size": 692,
+      "sha256": "90eefd3170718900ac9d7635780ea69335e85fdd815e4286644927cde846234a"
+    },
+    {
+      "path": "README.md",
+      "size": 10946,
+      "sha256": "203e08f43039d1be1d3a3018c5bcc163fbf5c13e69951b4decf8d9a39b041317"
+    },
+    {
+      "path": "serve.py",
+      "size": 1133,
+      "sha256": "1fe07eebba78805fc978d21e3146ec5e7b0baf43356a68843f906d94c8987caf"
+    },
+    {
+      "path": "START_MAC.command",
+      "size": 221,
+      "sha256": "8042cbabb572fae107922b3a88ba472ff1a27fcff4df8c74b930afe1433c142b"
+    },
+    {
+      "path": "tests/app.test.mjs",
+      "size": 11534,
+      "sha256": "db897d520620d0eab572d68c8729c33ae1244f1cc0c0aa28157186c7579620e4"
+    },
+    {
+      "path": "tests/check.mjs",
+      "size": 14285,
+      "sha256": "810865c9268ef8b65c1340c65f4a21bfbdb9cf7d02741c236484ba8fc83d4fce"
+    },
+    {
+      "path": "tests/core.test.mjs",
+      "size": 3830,
+      "sha256": "7333e92241255af1984fd98634dbf52d272a60fbb7e633c8c73239444a671652"
+    },
+    {
+      "path": "tests/export.test.mjs",
+      "size": 1980,
+      "sha256": "16273e88b3190ac753d0ac99923a05e5006419cdea8ee0738d41edac7882f70e"
+    },
+    {
+      "path": "tests/features.test.mjs",
+      "size": 3352,
+      "sha256": "42fa041d04d6e6a014617272a5b6007b662a39a822c177965e9a33b915e28b91"
+    },
+    {
+      "path": "tests/i18n.test.mjs",
+      "size": 3128,
+      "sha256": "56146a19dab054ae91adf6f2db223c8536cfe9bf35731f715a43d39c96312b54"
+    },
+    {
+      "path": "tests/support/app-fixture.mjs",
+      "size": 5160,
+      "sha256": "209c524b7e9c904e95835ad684286f7eb9b61d74c4cc6970c6beb224f1220619"
+    },
+    {
+      "path": "tests/terrain.test.mjs",
+      "size": 5809,
+      "sha256": "d38dc874c321564c33cb77c8e9e1cb8a487d70566507e59e3f1c3f44911728c0"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "size": 2033,
+      "sha256": "0bc2ef7d317348d04cb04396bf48234d328c25ce5e7370bebbb4486e111e4f73"
+    }
+  ]
+}

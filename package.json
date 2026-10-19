@@ -1,0 +1,21 @@
+{
+  "name": "taiwan-biotopo-maps-web",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Browser-based terrain and biological occurrence mapping for Taiwan and its offshore islands.",
+  "license": "MIT",
+  "author": "Yu-Chun Hsiao",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YCHsiao-TW/TaiwanBioTopoMaps.git"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node tests/core.test.mjs && node tests/i18n.test.mjs && node tests/export.test.mjs && node tests/features.test.mjs && node tests/app.test.mjs",
+    "test:render": "node tests/check.mjs && node tests/terrain.test.mjs",
+    "start": "python3 serve.py"
+  }
+}
