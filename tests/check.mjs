@@ -42,7 +42,11 @@ const custom={pageWidth:23,pageHeight:17};assert.equal(pagePreset(custom),'custo
 console.log('PASS: all nine aspect presets, custom dimensions, portrait/landscape pointer coordinates, southern bounds, PNG/SVG/PDF page sizes and output guard');
 
 const enScene={...state,language:'en',camera:defaultCamera(settings),settings:{...settings,countyLabels:true}};
-const en=renderer.render(enScene,{width:1500,svg:true});assert.ok(en.svg.includes('Groups'));assert.ok(en.svg.includes('Elevation (m)'));assert.ok(en.svg.includes('County'));assert.ok(en.svg.includes('DEMO DATA'));
+const en=renderer.render(enScene,{width:1500,svg:true});assert.ok(en.svg.includes('>Species</text>'));assert.ok(en.svg.includes('Elevation (m)'));assert.ok(en.svg.includes('County'));assert.ok(en.svg.includes('DEMO DATA'));
+for(const [language,legendTitle,title] of [['en','species','Species'],['en','groups','Groups'],['zh-Hant','species','物種'],['zh-Hant','groups','分群']]){
+ const rendered=renderer.render({...enScene,language,settings:{...enScene.settings,legendTitle}},{width:1500,svg:true});
+ assert.ok(rendered.svg.includes('>'+title+'</text>'),`${language}/${legendTitle} legend header`);
+}
 assert.ok(!/[\u3400-\u9fff]/.test(en.svg));await fs.writeFile(path.join(out,'language-en.svg'),en.svg);
 const groupName='物種／分群';const zhScene={...enScene,language:'zh-Hant',groups:[groupName],colors:{[groupName]:'#0072B2'},sites:[]};
 const zh=renderer.render(zhScene,{width:1500,svg:true});assert.ok(zh.svg.includes('海拔（m）'));assert.ok(zh.svg.includes('示範資料'));const keep=renderer.render({...zhScene,language:'en'},{width:1500,svg:true});assert.ok(keep.svg.includes(groupName),'User taxon name must not be translated');

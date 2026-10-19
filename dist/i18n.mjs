@@ -40,6 +40,7 @@ export const TEXT={
  '經度、緯度，以及物種或分群欄位':'Longitude, latitude and a taxon or group column',
  '文字編碼':'Text encoding','Big5（Excel 舊版）':'Big5 (legacy Excel)','↓ 下載範例 CSV':'↓ Download sample CSV',
  'CSV 在瀏覽器內處理，原始資料不會上傳。':'CSV files are processed in your browser; raw records are not uploaded.',
+ '圖例標題':'Legend title','物種':'Species','分群':'Groups',
  '欄位對應':'Column mapping','自動辨識':'Auto-detected','經度 Longitude':'Longitude','緯度 Latitude':'Latitude','物種／分群':'Taxon / group',
  '↓ 下載排除資料與原因':'↓ Download excluded records & reasons','物種與配色':'Taxa & colors','全選':'Select all',
  '取消勾選以篩選；點色塊調整顏色。':'Uncheck to filter; select a swatch to change its color.',
@@ -123,6 +124,7 @@ export const MESSAGES={
  rendering:['正在繪製 {i}/{n}：{name}','Rendering {i}/{n}: {name}'],
  batchDone:['完成：全部＋{n} 個物種，已打包 ZIP。','Done: combined map + {n} taxa packed into ZIP.'],
  exportFailed:['匯出失敗：{reason}','Export failed: {reason}'],
+ legendSpecies:['物種','Species'],legendGroups:['分群','Groups'],
  groups:['物種／分群','Groups'],elevation:['海拔（m）','Elevation (m)'],demoMap:['示範資料 · 非真實採集紀錄','DEMO DATA · NOT OCCURRENCE RECORDS']
 };
 const STORAGE_KEY='TaiwanBioTopoMaps.language';

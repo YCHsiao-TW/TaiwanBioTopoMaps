@@ -105,7 +105,7 @@ export class MapRenderer{
  legend(paint,state){
   const s=state.settings,groups=state.groups.filter(group=>!state.selected||state.selected.has(group)),g=legendGeometry(s,groups.length,layout(s));
   if(!g.side)paint.rect(g.x-10,g.headerY-24,g.width,g.height,'#fffffff0','#dce4d5',.6);
-  paint.text(tx('groups',{},state.language||getLanguage()),g.x,g.headerY,{size:Math.max(14,g.font+1),weight:'600'});
+  paint.text(tx(s.legendTitle==='groups'?'legendGroups':'legendSpecies',{},state.language||getLanguage()),g.x,g.headerY,{size:Math.max(14,g.font+1),weight:'600'});
   groups.forEach((group,i)=>{
    const col=Math.floor(i/Math.max(1,g.rows)),row=i%Math.max(1,g.rows),x=g.x+col*200,y=g.firstY+row*g.gap;
    paint.circle(x+5,y-4,g.symbol,state.colors[group],'none',0);

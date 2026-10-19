@@ -28,6 +28,16 @@ await check('Legend toggles preserve the camera without cumulative zoom drift',a
  assert.deepEqual((await savedConfig()).camera,before);
 });
 
+await check('Legend title selection persists, rejects invalid values atomically and supports older settings',async()=>{
+ assert.equal((await savedConfig()).settings.legendTitle,'species');
+ const before=(await savedConfig()).camera;
+ get('legendTitle').value='groups';await get('legendTitle').emit('change');
+ const config=await savedConfig();assert.equal(config.settings.legendTitle,'groups');assert.deepEqual(config.camera,before);
+ await loadConfig(config);assert.equal(get('legendTitle').value,'groups');
+ const bad=structuredClone(config);bad.settings.legendTitle='invalid';await loadConfig(bad);assert.deepEqual(await savedConfig(),config);
+ delete config.settings.legendTitle;await loadConfig(config);assert.equal((await savedConfig()).settings.legendTitle,'species');assert.equal(get('legendTitle').value,'species');
+});
+
 await check('An invalid settings file leaves settings, filters, columns and camera unchanged',async()=>{
  const before=await savedConfig(),bad=structuredClone(before);bad.settings.radius=17;bad.referenceBounds=[122,25,119,21];bad.columns={lon:'longitude',lat:'latitude',group:''};
  await loadConfig(bad);assert.deepEqual(await savedConfig(),before);assert.match(get('toast').textContent,/失敗|Could not load/);

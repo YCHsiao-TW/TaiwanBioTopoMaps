@@ -6,7 +6,7 @@ import {createProject,readProject} from './project.mjs';
 import {MapRenderer,layout,defaultCamera,inversePosition,SOURCE} from './map.mjs';
 import {pngBlob,pdfBlob,zipBlob,download,safeName,uniqueName} from './export.mjs';
 const $=id=>document.getElementById(id);
-const defaults={legendPosition:'right',legendColumns:1,legendFont:13,legendSymbol:4.4,legendX:75,legendY:10,siteNumbers:false,siteLabelSize:11,pageWidth:25,pageHeight:20,terrain:true,hillshade:true,shadow:.28,direction:315,angle:45,terrainQuality:'auto',terrainZoom:8,pies:true,pieMode:'presence',digits:5,radius:7,autoSize:true,counties:true,towns:true,countyLabels:false,townLabels:false,frame:true,grid:false,northArrow:true,scaleBar:true,legend:true,italic:true};
+const defaults={legendTitle:'species',legendPosition:'right',legendColumns:1,legendFont:13,legendSymbol:4.4,legendX:75,legendY:10,siteNumbers:false,siteLabelSize:11,pageWidth:25,pageHeight:20,terrain:true,hillshade:true,shadow:.28,direction:315,angle:45,terrainQuality:'auto',terrainZoom:8,pies:true,pieMode:'presence',digits:5,radius:7,autoSize:true,counties:true,towns:true,countyLabels:false,townLabels:false,frame:true,grid:false,northArrow:true,scaleBar:true,legend:true,italic:true};
 const REGIONS={taiwan:[119.5,21.6,122.25,25.55],all:[117.9,21.5,123,26.6],twkinmen:[118.05,21.5,122.5,25.65],kinmen:[118.1,24.35,118.52,24.57],matsu:[119.85,25.9,120.6,26.45],penghu:[119.28,23.12,119.78,23.84],lyudao:[121.455,22.62,121.535,22.705],lanyu:[121.49,21.91,121.62,22.105],guishan:[121.92,24.81,121.98,24.87],xiaoliuqiu:[120.345,22.31,120.395,22.365]};
 const state={language:getLanguage(),settings:{...defaults},camera:defaultCamera(defaults),referenceBounds:REGIONS.taiwan,raw:null,filename:'records.csv',catalog:[],columns:{},valid:[],invalid:[],groups:[],colors:{},selected:new Set(),sites:[],demo:true,page:0};
 let ready=false,pendingFrame=false,toastTimer,lastFile=null,busy=false,validationError='',fileReadVersion=0;
@@ -75,7 +75,7 @@ function prepareConfig(cfg,raw=state.raw){
    if(typeof v!==typeof defaults[key]||typeof v==='number'&&(!Number.isFinite(v)||(limits[key]&&(v<limits[key][0]||v>limits[key][1]))))throw Error('設定數值超出範圍。');
    if(key==='pieMode'&&!['presence','count'].includes(v))throw Error('圓餅比例設定錯誤。');settings[key]=v;
   }
-  if(!LEGEND_POSITIONS.includes(settings.legendPosition)||!Number.isInteger(settings.legendColumns)||!['fast','auto','detail','maximum'].includes(settings.terrainQuality))throw Error('設定數值超出範圍。');
+  if(!['species','groups'].includes(settings.legendTitle)||!LEGEND_POSITIONS.includes(settings.legendPosition)||!Number.isInteger(settings.legendColumns)||!['fast','auto','detail','maximum'].includes(settings.terrainQuality))throw Error('設定數值超出範圍。');
   pageSize(settings);
   if(!Number.isInteger(settings.terrainZoom)||settings.terrainZoom<7||settings.terrainZoom>12||!Number.isInteger(settings.digits))throw Error('圖磚層級或座標精度錯誤。');
   const cam=cfg.camera;
